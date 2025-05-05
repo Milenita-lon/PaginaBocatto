@@ -18,7 +18,7 @@
     position: relative;
 }
 body{
-    background-color: #FFF5C7;
+    background-color: #FEF7E3;
     .agregado{
         background-color: #FABC6D;
         width: 100%;
@@ -29,18 +29,24 @@ body{
         display: flex;
         height: 100%;
     }
-    .extra{
-        width: 20%;
-        #logo{
-            width: 200px;
-            margin-left: 30px;
-            margin-top: 80px;
+    .productos{
+        width: 80%;
+        .pizza{
+            background-color: #FEF7E3;
+            width: 300px;
+            height: 300px;
+            border-radius: 30px;
+            margin-top: 60px;
+            margin-left: 40px;
+            box-shadow: 0 0 35px #0008;
+
+            #imgpi{
+                width: 200px;
+                height: 200px;
+                margin-left: 50px;
+                margin-top: 20px;
+            }
         }
-    }
-    .contenido{
-        width: 60%;
-        margin-right: 40px;
-        margin-left: 40px;
     }
     .publicidad{
         width: 20%;
