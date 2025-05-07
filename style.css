@@ -1,108 +1,91 @@
-*{
-    margin: 0%;
+* {
+    margin: 0;
     font-family: 'Courier New', Courier, monospace;
 }
-.imagenfondo{
+
+body {
+    background-color: #FEF7E3;
+}
+
+.agregado {
+    background-color: #FABC6D;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+}
+
+.imagenfondo {
     background: url(img/fondocolor2.png) bottom / cover fixed #000;
     width: 100%;
-    height: 50%;
-    padding-top: 12%;
-   
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.nombreempresa{
-    font-family: 'Courier New', Courier, monospace;
+
+.nombreempresa {
     color: #603105;
     font-size: 40px;
-    margin-left: 520px;
-    margin-top: -85px;
-    position: relative;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
-body{
+
+
+.columnas {
+    display: flex;
+    height: 100%;
+}
+
+.productos {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);/* se utiliza para definir cómo se distribuyen las columnas dentro de un contenedor de tipo "grid" (grilla, cuadricula) */
+    gap: 40px;
+    padding: 60px 20px 20px 20px;
+    justify-items: center;
+}
+
+.productos .pizza {
     background-color: #FEF7E3;
-    .agregado{
-        background-color: #FABC6D;
-        width: 100%;
-        height:40px;
-        position: absolute;
-    }
-    .columnas{
-        display: flex;
-        height: 100%;
-    }
-    .productos{
-        width: 80%;
-        display: inline;
-        .pizza{
-            background-color: #FEF7E3;
-            width: 300px;
-            height: 350px;
-            border-radius: 30px;
-            margin-top: 60px;
-            margin-left: 40px;
-            box-shadow: 0 0 35px #0008;
-
-            #imgpi{
-                width: 200px;
-                height: 200px;
-                margin-left: 50px;
-                margin-top: 20px;
-            }
-            .titulo{
-                font-family: 'Courier New', Courier, monospace;
-                text-align: center;
-            }
-            .descripcion{
-                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                text-align: center;
-                font-size: 15px;
-                color: #0007;
-                margin-left: 7px;
-                margin-right: 7px;
-                margin-top: 7px;
-            }
-        }
-        .pizza2{
-            background-color: #FEF7E3;
-            width: 300px;
-            height: 350px;
-            border-radius: 30px;
-            margin-top: 60px;
-            margin-left: 40px;
-            box-shadow: 0 0 35px #0008;
-
-            #imgpi{
-                width: 200px;
-                height: 200px;
-                margin-left: 50px;
-                margin-top: 20px;
-            }
-            .titulo2{
-                font-family: 'Courier New', Courier, monospace;
-                text-align: center;
-            }
-            .descripcion2{
-                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                text-align: center;
-                font-size: 15px;
-                color: #0007;
-                margin-left: 7px;
-                margin-right: 7px;
-                margin-top: 7px;
-            }
-        }
-    }
-    .publicidad{
-        width: 20%;
-        #add{
-            width: 250px;
-            margin-left:20px;
-            margin-top: 80px;
-        }
-    }
-    .texto{
-        font-size: 20px;
-        text-align: justify;
-        margin-top: 80px;
-    }
+    width: 100%;
+    max-width: 300px;/*define el ancho máximo que puede tener un elemento*/
+    border-radius: 20px;
+    box-shadow: 0 0 25px #0008;
+    text-align: center;
+    padding: 20px;
 }
 
+.productos .pizza img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;/*Hace que una imagen rellene completamente el contenedor, recortando lo que sobre, sin deformarse.*/
+}
+
+.productos .pizza .titulo {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.productos .pizza .descripcion {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: #0007;
+    margin: 5px 10px;
+}
+
+.publicidad {
+    width: 20%;
+    padding: 80px 20px 0 0;
+}
+
+.publicidad video {
+    width: 100%;
+    max-width: 250px;
+}
+
+.texto {
+    font-size: 18px;
+    text-align: justify;
+    margin: 60px 20px;
+}
