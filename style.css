@@ -22,7 +22,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 .nombreempresa {
     color: #603105;
     font-size: 40px;
@@ -30,13 +29,10 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
 }
-
-
 .columnas {
     display: flex;
     height: 100%;
 }
-
 .productos {
     width: 80%;
     display: grid;
@@ -45,7 +41,6 @@ body {
     padding: 60px 20px 20px 20px;
     justify-items: center;
 }
-
 .productos .pizza {
     background-color: #FEF7E3;
     width: 100%;
@@ -55,13 +50,11 @@ body {
     text-align: center;
     padding: 20px;
 }
-
 .productos .pizza img {
     width: 200px;
     height: 200px;
     object-fit: cover;/*Hace que una imagen rellene completamente el contenedor, recortando lo que sobre, sin deformarse.*/
 }
-
 .productos .pizza .titulo {
     font-size: 18px;
     margin: 10px 0;
@@ -96,7 +89,7 @@ body {
     grid-template-columns: repeat(5,1fr);
 }
 .redes{
-    width: 300px;
+    width: 350px;
     height: 270px;
     justify-items: center;
 }
@@ -114,8 +107,14 @@ body {
     text-decoration: none;
 }
 .ubicacion {
-    width: 400px;
+    width: 350px;
     height: 270px;
+    border-left: 1px solid #0003;
+}
+.ubicacion-contenido{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
 }
 .ubicacion h4{
     padding-top: 30px;
@@ -126,4 +125,15 @@ body {
 .ubicacion img {
     width: 35px;
     padding: 30px 15px 15px 40px;
+}
+.ubicacion p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 15px;
+}
+.ubicacion a,
+.ubicacion a:visited,
+.ubicacion a:hover,
+.ubicacion a:active {
+    text-decoration: none !important;
+    color: #000 !important;
 }
