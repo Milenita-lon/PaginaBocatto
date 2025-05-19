@@ -11,8 +11,28 @@ body {
     background-color: #FABC6D;
     width: 100%;
     height: 40px;
-    position: absolute;
+    top: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
 }
+
+.barra-menu {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+}
+
+.nav-menu a {
+    margin: 10px;
+    text-decoration: none;
+    color: #603105;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
 
 .imagenfondo {
     background: url(img/fondocolor2.png) bottom / cover fixed #fff;
