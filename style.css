@@ -135,7 +135,7 @@ body {
 }
 /*SOLO PARTE UBICACIÓN DE BOCATTO*/
 .ubicacion {
-    width: 350px;
+    width: 400px;
     height: 270px;
     border-left: 1px solid #0003;
 }
@@ -165,8 +165,12 @@ body {
     text-decoration: none !important; /* el important es para darle prioridad sobre todo lo demas*/
     color: #000 !important;
 }
-
-
+/*SOLO PARTE AYUDA DE BOCATTO*/
+.ayuda{
+    border-left: 1px solid #0003;
+    width: 350px;
+    height: 270px;
+}
 /*SOLO PARTE COPYRIGHT Y TERMINOS Y CONDICIONES*/
 .copyright {
     background-color: #d3d0cc;;
