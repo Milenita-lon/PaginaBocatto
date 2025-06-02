@@ -6,7 +6,7 @@
 body {
     background-color: #FEF7E3;
 }
-
+/*HEADER*/
 .agregado {
     background-color: #FABC6D;
     width: 100%;
@@ -41,9 +41,6 @@ body {
     background-color: #ffffff; /* Cambiá este color de fondo */
     transform: translateY(-3px); /* Levanta el botón un poquito */
 }
-
-
-
 .imagenfondo {
     background: url(img/fondocolor2.png) bottom / cover fixed #fff;
     width: 100%;
@@ -59,10 +56,12 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
 }
+/*BODY*/
 .columnas {
     display: flex;
     height: 100%;
 }
+/*COLUMNA 1*/
 .productos {
     width: 80%;
     display: grid;
@@ -96,7 +95,7 @@ body {
     color: #0007;
     margin: 5px 10px;
 }
-
+/*COLUMNA 2*/
 .publicidad {
     width: 20%;
     padding: 80px 20px 0 0;
@@ -107,17 +106,15 @@ body {
     max-width: 250px;
 }
 
-.texto {
-    font-size: 18px;
-    text-align: justify;
-    margin: 60px 20px;
-}
+/*FOOTER PRINCIPAL*/
 .footer{
     height:300px;
     background-color: #d3d0cc;
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto auto; /* una fila para redes/ubicación, otra para copyright */
 }
+/*SOLO PARTE DE REDES DE BOCATTO*/
 .redes{
     width: 350px;
     height: 270px;
@@ -136,6 +133,7 @@ body {
 .redes a{
     text-decoration: none;
 }
+/*SOLO PARTE UBICACIÓN DE BOCATTO*/
 .ubicacion {
     width: 350px;
     height: 270px;
@@ -164,6 +162,36 @@ body {
 .ubicacion a:visited,
 .ubicacion a:hover,
 .ubicacion a:active {
-    text-decoration: none !important;
+    text-decoration: none !important; /* el important es para darle prioridad sobre todo lo demas*/
     color: #000 !important;
+}
+
+
+/*SOLO PARTE COPYRIGHT Y TERMINOS Y CONDICIONES*/
+.copyright {
+    background-color: #d3d0cc;;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    padding: 20px 10px;
+    width: 100%;
+    grid-column: 1 / -1; /* Ocupa todo el ancho de la grilla del footer */
+}
+.copyright p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.copyright-links {
+    margin-top: 10px;
+}
+
+.copyright-links a {
+    color: #555;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.copyright-links a:hover {
+    color: #000;
 }
