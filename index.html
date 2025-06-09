@@ -18,6 +18,9 @@
 <body>
    <div class="agregado">
     <div class="barra-menu">
+        <!--Boton para menu en celu-->
+        <button class="menu" aria-label="Abrir Menú"> 
+            <!-- aria-label para guiar al usuario --> <img src="img/menu.png" alt=""> </button>
         <nav class="nav-menu">
             <a href="#productos">Menú</a>
             <a href="#ubicacion">Ubicación</a>
@@ -76,6 +79,14 @@
             <video src="video/add.mp4" autoplay loop id="add"></video>
         </div>
     </div>
+    <script>
+        const toggle = document.querySelector(".menu"); /*Busca en el html el elemento con la clase menu*/
+        const menu = document.querySelector(".nav-menu");/*Busca el contenedor de los "a href" para mostrarlo u ocultarlo*/
+
+        toggle.addEventListener("click", () => { /*Le dice al boton que cuando alguien haga click se active o desactive*/
+         menu.classList.toggle("active"); /*esto mismo hace que se active o desactive*/
+    });
+    </script>
 </body>
 <footer>
     <div class="footer">
