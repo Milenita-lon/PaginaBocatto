@@ -1,13 +1,20 @@
 * {
     margin: 0;
     padding: 0%;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: 'Courier New', Courier, monospace;
 }
 
 body {
     background-color: #FEF7E3;
+    width: 100%;
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /*HEADER*/
 .agregado {
     background-color: #FABC6D;
@@ -61,8 +68,14 @@ body {
 /*BODY*/
 .columnas {
     display: flex;
-    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
 }
+
+.productos, .publicidad, .extra {
+    min-width: 0;
+}
+
 /*COLUMNA 1*/
 .productos {
     width: 80%;
@@ -223,6 +236,7 @@ body {
 /*PARTE RESPONSIVE TABLETS O PANTALLAS MEDIANAS*/
 @media screen and (max-width: 1024px) {
     .productos {
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
@@ -256,7 +270,8 @@ body {
     }
 
     .publicidad {
-        display: none; /* Ocultamos la columna de publicidad en tablets */
+        display: none;
+        width: 0%; /* Ocultamos la columna de publicidad en tablets */
     }
 
     .columnas {
@@ -274,17 +289,15 @@ body {
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
-        padding: 0 5px;
         background-color: #FABC6D; /* Asegura que el fondo cubra el header */
         position: relative;
         z-index: 20;
     }
 
     .nav-menu {
-        display: none;
+        display: none;  
         width: 100%;
         background-color: #FABC6D;
-        padding: 10px 0;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         border-radius: 0 0 10px 10px;
         z-index: 15;
@@ -306,6 +319,7 @@ body {
 
     .menu {
         display: block;
+        flex-direction: column;
         font-size: 30px;
         cursor: pointer;
         background: none;
@@ -315,12 +329,14 @@ body {
     }
 
     .agregado {
+        padding: 0%;
         justify-content: space-between;
         align-items: center;
         z-index: 20;
     }
      
     .columnas {
+        width: 100%;
         flex-direction: column;
     }
 
@@ -331,7 +347,7 @@ body {
     }
 
     .publicidad {
-        width: 100%;
+        width: 0%;
         padding: 30px 10px;
         text-align: center;
     }
@@ -357,6 +373,7 @@ body {
     .ubicacion img {
         padding: 0;
         margin: auto;
+        width: 40px;
     }
 
     .copyright {
