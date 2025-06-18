@@ -212,6 +212,9 @@ html, body {
     width: 350px;
     height: 270px;
 }
+.ayuda-contenido{
+    justify-content: center;
+}
 .ayuda h4{
     padding-top: 30px;
     text-align: center;
