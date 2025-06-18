@@ -50,14 +50,35 @@ html, body {
     background-color: #ffffff; /* Cambiá este color de fondo */
     transform: translateY(-3px); /* Levanta el botón un poquito */
 }
+
 .imagenfondo {
-    background: url(img/fondocolor2.png) bottom / cover fixed #fff;
+    position: relative;
     width: 100%;
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /*Oculta el desborde*/
 }
+
+/* El before crea una capa encima del fondo*/
+.imagenfondo::before {
+    content: ""; /*Es necesario para que aparezca el before*/
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/fondocolor2.png) bottom / cover no-repeat;
+    filter: blur(3px); /* Ajustá el nivel de desenfoque */
+    z-index: 0; /*Lo m,anda al fondo*/
+}
+
+/* Asegurate de que el contenido esté encima del fondo */
+.imagenfondo > * {
+    position: relative;
+    z-index: 1;
+}
+
 .nombreempresa {
     color: #603105;
     font-size: 40px;
@@ -98,6 +119,7 @@ html, body {
     width: 200px;
     height: 200px;
     object-fit: cover;/*Hace que una imagen rellene completamente el contenedor, recortando lo que sobre, sin deformarse.*/
+    image-rendering:pixelated;
 }
 .productos .pizza .titulo {
     font-size: 18px;
@@ -149,6 +171,7 @@ html, body {
 .redes a{
     text-decoration: none;
 }
+
 /*SOLO PARTE UBICACIÓN DE BOCATTO*/
 .ubicacion {
     width: 450px;
@@ -182,6 +205,7 @@ html, body {
     text-decoration: none !important; /* el important es para darle prioridad sobre todo lo demas*/
     color: #000 !important;
 }
+
 /*SOLO PARTE AYUDA DE BOCATTO*/
 .ayuda{
     border-left: 1px solid #0003;
@@ -282,6 +306,7 @@ html, body {
         width: 100%;
     }
 }
+
 /*PARTE RESPONSIVE PARA CELULARES*/
 @media screen and (max-width: 768px) {
     .barra-menu {
