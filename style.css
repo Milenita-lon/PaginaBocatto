@@ -506,7 +506,20 @@ html, body {
         margin-bottom: 5px;
         padding-left: 10px;
     }
+
     .copyright {
         padding: 15px 5px;
     }
+
+    .btnSubir {
+        background-color: transparent;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.3s ease;
+    }
+
+    .btnSubir:active {
+        background-color: rgba(250, 188, 109, 0.5);
+    }
 }
+
+
