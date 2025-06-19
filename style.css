@@ -497,6 +497,10 @@ html, body {
         width: 40px;
     }
 
+    .ayuda-contenido{
+        margin-bottom: 5px;
+        padding-left: 10px;
+    }
     .copyright {
         padding: 15px 5px;
     }
