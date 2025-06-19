@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
-<header class="imagenfondo">
+<header class="imagenfondo" id="top">
 
     <div class="nombreempresa">
          <h1>Bocatto</h1>
@@ -24,7 +24,7 @@
         <nav class="nav-menu">
             <a href="#productos">Menú</a>
             <a href="#ubicacion">Ubicación</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#redes">Contacto</a>
         </nav>
     </div>
 </div>
@@ -86,10 +86,11 @@
          menu.classList.toggle("active"); /*esto mismo hace que se active o desactive*/
     });
     </script>
+    
 </body>
 <footer>
     <div class="footer">
-        <div class="redes">
+        <div class="redes" id="redes">
              <h4>Siguenos!</h4>
                 <div>
                     <a href="https://www.instagram.com/">
@@ -101,7 +102,7 @@
                     <a href="https://x.com/">
                         <img src="img/twitter.png" alt="">
                      </a>
-                    <a href="">
+                    <a href="https://wa.me/5493496413638">
                         <img src="img/whatsapp.png" alt="">
                     </a>
                 </div>
@@ -127,12 +128,15 @@
             </div>
         </div>
         <div class="copyright">
-             <p>&copy; 2025 Bocatto. Todos los derechos reservados.</p>
+             <p>&copy; 2025 Bocatto.  Todos los derechos reservados.</p>
                 <nav class="copyright-links">
-                  <a href="#terminos">Términos y Condiciones</a>
-                  <a href="#privacidad">Política de Privacidad</a>
+                  <a href="https://www.privacypolicies.com/live/69d829be-be54-4d4c-a52a-29a1507d9e6e">Política de Privacidad</a>
                 </nav>
         </div>
     </div>
+    <a href="#top" class="btnSubir" title="Ir arriba">
+        <img src="img/angulo-circulo-hacia-arriba.png" alt="Ir arriba">
+    </a>
+    
 </footer>
 </html>

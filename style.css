@@ -246,13 +246,16 @@ html, body {
     border-left: 1px solid #0003;
     width: 350px;
     height: 270px;
+    padding: 0 0 0 50px;
+   
 }
 .ayuda-contenido{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 30px 0 0 15px;
+    
 }
 .ayuda h4{
     padding-top: 30px;
@@ -270,8 +273,9 @@ html, body {
 .ayuda a:hover{
     color: #828181;
 }
-.ayuda ul{
+.ayuda ul li{
     list-style: none;
+    margin-bottom: 30px;
 }
 
 
@@ -304,6 +308,29 @@ html, body {
 }
 .copyright-links a:hover {
     color: #000;
+}
+
+
+
+/*BOTON PARA SUBIR EN LA PAGINA*/
+.btnSubir {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  padding: 5px;
+  border-radius: 40%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.btnSubir:hover {
+  background-color: #fff;
+}
+
+.btnSubir img {
+  width: 55px;
+  height: 55px;
 }
 
 
