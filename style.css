@@ -486,9 +486,14 @@ html, body {
         padding: 20px 0;
     }
 
+    .img-ubi{
+        display: none;
+    }
+
     .ubicacion-contenido {
         grid-template-columns: 1fr;
         text-align: center;
+        padding: 20px;
     }
 
     .ubicacion img {
