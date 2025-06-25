@@ -372,7 +372,60 @@ html, body {
     }
 }
 
+@media screen and (max-width:1024px) {
+    .productos {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
 
+    .ubicacion, .ayuda, .redes {
+        width: 100%;
+        height: auto;
+        border-left: none;
+        border-top: 1px solid #0003;
+        text-align: center;
+    }
+
+    .ubicacion-contenido {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .ubicacion img {
+        padding: 20px;
+    }
+
+    .img-ubi{
+        display: none;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .copyright {
+        grid-column: 1 / 2;
+    }
+
+    .publicidad {
+        display: none;
+        width: 0%; /* Ocultamos la columna de publicidad en tablets */
+    }
+
+    .columnas {
+        flex-direction: column;
+    }
+
+    .productos {
+        width: 100%;
+    }
+}
+    
 
 /*PARTE RESPONSIVE PARA CELULARES*/
 @media screen and (max-width: 768px) {
