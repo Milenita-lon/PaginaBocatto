@@ -1,4 +1,5 @@
 * {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0%;
     box-sizing: border-box; 
@@ -332,6 +333,13 @@ html, body {
   border-radius: 40%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.btnSubir.oculto {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .btnSubir:hover {

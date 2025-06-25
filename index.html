@@ -137,6 +137,19 @@
     <a href="#top" class="btnSubir" title="Ir arriba">
         <img src="img/angulo-circulo-hacia-arriba.png" alt="Ir arriba">
     </a>
+
+    <script> /*Cuando bajamos más de 200px, el botón aparece. Y cuando volvemos a subir desaparece*/
+        const btnSubir = document.querySelector('.btnSubir');
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY < 200) {
+                btnSubir.classList.add('oculto');
+            } else {
+                btnSubir.classList.remove('oculto');
+            }
+        });
+    </script>
+
     
 </footer>
 </html>
