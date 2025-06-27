@@ -20,7 +20,7 @@ html, body {
 
 
 /*HEADER*/
-.agregado {
+.menu-principal {
     background-color: #FABC6D;
     width: 100%;
     height: 80px;
@@ -366,13 +366,16 @@ html, body {
 
 
 /*PARTE RESPONSIVE PANTALLAS GRANDES*/
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1367px){
     .footer {
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     }
 }
 
-@media screen and (max-width:1024px) {
+
+
+/*PARTE RESPONSIVE PANTALLAS MEDIANAS*/
+@media screen and (max-width:1200px) {
     .productos {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
