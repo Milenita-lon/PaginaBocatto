@@ -364,6 +364,12 @@ html, body {
     }
 }
 
+@media screen and (min-width: 1600px) {
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    }
+}
+
 
 
 /*PARTE RESPONSIVE PANTALLAS MEDIANAS*/
