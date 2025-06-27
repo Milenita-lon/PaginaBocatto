@@ -24,11 +24,10 @@ html, body {
     background-color: #FABC6D;
     width: 100%;
     height: 80px;
-    top: 350px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 20px;
+   
 }
 
 .barra-menu {
@@ -60,8 +59,6 @@ html, body {
     width: 100%;
     height: 50vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden; /*Oculta el desborde*/
 }
 
@@ -69,14 +66,11 @@ html, body {
 .imagenfondo::before {
     content: ""; /*Es necesario para que aparezca el before*/
     position: absolute;
-    top: 0; left: 0;
     width: 110%;
     height: 110%;
-    top: -5%;
-    bottom: -5%;
     background: url(img/fondocolor2.png) bottom / cover no-repeat;
     filter: blur(3px); /* Ajustá el nivel de desenfoque */
-    z-index: 0; /*Lo m,anda al fondo*/
+    z-index: 0; /*Lo manda al fondo*/
 }
 
 /* Asegurate de que el contenido esté encima del fondo */
@@ -94,8 +88,6 @@ html, body {
     color: #603105;
     font-size: 40px;
     text-align: center;
-    padding: 10px 20px;
-    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.3); /*para lograr transparencia blanca*/
 }
 
@@ -109,7 +101,7 @@ html, body {
     overflow: hidden;
 }
 
-.productos, .publicidad, .extra {
+.productos, .publicidad {
     min-width: 0;
 }
 
@@ -120,12 +112,11 @@ html, body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);/* se utiliza para definir cómo se distribuyen las columnas dentro de un contenedor de tipo "grid" (grilla, cuadricula) */
     gap: 40px;
-    padding: 60px 20px 20px 20px;
+    padding: 60px 20px 40px 20px;
     justify-items: center;
 }
 .productos .pizza {
     background-color: #FEF7E3;
-    width: 100%;
     max-width: 300px;/*define el ancho máximo que puede tener un elemento*/
     border-radius: 20px;
     box-shadow: 0 0 25px #0008;
@@ -136,7 +127,6 @@ html, body {
     width: 200px;
     height: 200px;
     object-fit: cover;/*Hace que una imagen rellene completamente el contenedor, recortando lo que sobre, sin deformarse.*/
-    image-rendering:pixelated;
 }
 .productos .pizza .titulo {
     font-size: 18px;
@@ -172,7 +162,8 @@ html, body {
 .footer {
     background-color: #d3d0cc;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Genera un grid responsivo: se repiten columnas automáticamente,
+    cada una con un ancho mínimo de 320px y un máximo de 1fr (espacio flexible).*/
     gap: 20px;
     padding: 20px;
     box-sizing: border-box;
@@ -186,7 +177,7 @@ html, body {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Usamos box-sizing: border-box para que el padding y el borde formen parte del tamaño total del elemento(width y height). Esto hace que el diseño sea más predecible y evita desbordes.*/
 }
 
 
