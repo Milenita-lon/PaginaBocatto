@@ -356,8 +356,9 @@ html, body {
 }
 
 
+
 /*PARTE RESPONSIVE PANTALLAS GRANDES*/
-@media screen and (min-width: 1367px){
+@media screen and (min-width: 1400px) {
     .footer {
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     }
